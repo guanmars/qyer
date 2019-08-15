@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
+/*轮播图样式*/
 #main {
     width: 1000px;
     margin: 0 auto;
@@ -80,3 +76,5 @@
 #btn-right:hover {
     background-size: 40px 70px
 }
+/*页面内容区域的宽度,所有内容总宽度一致*/
+.my-width{width:1200px;}
