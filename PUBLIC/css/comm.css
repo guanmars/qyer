@@ -77,4 +77,11 @@
     background-size: 40px 70px
 }
 /*页面内容区域的宽度,所有内容总宽度一致*/
+<<<<<<< HEAD
 .my-width{width:1200px;margin:0 auto;}
+=======
+.my-width{
+    width:1200px;
+    margin: 0 auto;
+}
+>>>>>>> f7322acc53543c342ecf0355a236339e84fa96b5
