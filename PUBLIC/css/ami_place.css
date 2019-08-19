@@ -58,10 +58,11 @@ ul{
      font-size: 24px;
      margin-bottom: 35px;
      }
-.box,.box1{
+.box,.box1,.box2{
      width:980px;
      margin: 70px auto 0;
      position:relative;
+     margin-bottom: 50px;
     }
 
 .box-tab ul{
@@ -193,11 +194,78 @@ ul{
 .card1 img:first-child{
     height:100%;
 }
+
 .card1 ul li:not(:first-child) img{
     width:100%;
 }
+/*月度推荐*/
+.card2{
+    width:100%;
+    height: 300px;
 
-
+}
+.card2 li{
+    position: relative;
+    overflow: hidden;
+}
+.card2 img,.card2 div{
+    position: absolute;
+}
+.card2 div{
+    height: 100%;
+    padding: 22px 15px;
+    color: #fff;
+    transition: all 1s;
+    margin-top:130%;
+}
+.card2 h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+}
+.card2 span{
+    font-size: 12px;
+}
+.card2 ul li~li{
+    width: 189px;
+    height: 300px;
+    margin-left:8px;
+    float: left;
+}
+.card2 ul li:first-child{
+    width:191px;
+    height: 300px;
+    float: left;
+}
+.card2 img{
+    width:100%;
+}
+.box-tab .tab1{
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    color: #929292;
+  margin-bottom: 40px;
+  }    
+.box-tab .tab1 li{
+    cursor: pointer;
+  } 
+.box-tab .tab1 li:not(:last-child){
+    padding-right:25px;
+    cursor: pointer;
+  } 
+.box-tab .tab1 li span{
+   width: 50px;
+   height: 50px;
+   display: inline-block;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 50px;
+  }
+  .box-tab .tab1 li .in{
+      background: #28b76c;
+      color: #fff;
+  }
 
 
 
