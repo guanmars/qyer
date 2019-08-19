@@ -1,6 +1,241 @@
+.my-width{padding: 0 10px;}
 a{text-decoration: none;}
-#home_map{
-  width:100%; height:500px;
-  background:url(../img/index/banner2.jpg) 100%
+.top-wheel{
+  position:relative;
+  width:100%; height:635px;
+  background:url(../img/index/banner2.jpg);
 }
-#
+/*导航栏左边部分*/
+.top-nav{
+  display: flex;
+  background:linear-gradient(90deg,rgba(0,0,0,.2) 10%,transparent);
+  justify-content: space-between;
+  margin:0 30px;
+  z-index: 1;
+}
+.navbars{width:30%;}
+.navbars>.navbar-navs{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font: bolder 16px "arial black";
+}
+.navbars>.navbar-navs a{
+  display: inline-block;
+  height:60px;
+  color:#fff;
+  line-height: 60px; 
+}
+.navbars>.navbar-navs a:first-child img{vertical-align: middle;}
+/*导航栏右边图标部分*/
+.top-nav>.nav-user{
+  width:27%;height:60px;
+  display: flex;
+  align-items: center;
+}
+.nav-user>.sch{
+  height:30px;width:50%;
+  padding-top:5px;
+}
+.sch>button,.nav-user>.sch>input{border:0; outline:none;}
+.sch>input{border-radius: 3px;}
+.sch>button{
+  width:20px;
+  background: #fff ;
+}
+.nav-user>.imgs>a{
+  display:inline-block;
+  height:20px;
+  background:#fff;
+  font:13px bold;
+  color:#fff;
+  vertical-align: middle;
+  margin-right:10px;
+}
+.nav-user>.img>a:first-child{width:1px;}
+.imgs>a~a{width:20px;}
+.imgs>a:nth-child(6),.imgs>a:nth-child(7){width:30px;}
+/*左右的 > < 按钮*/
+.wheel-left-btn,.wheel-right-btn{
+  width:90px; height:60%;
+  position:relative;
+}
+.wheel-left-btn>a,.wheel-right-btn>a{
+  position: absolute;
+  top:50%;
+  font:45px bolder;
+  color:#fff !important;
+}
+.wheel-left-btn>a{left:50%;}
+.wheel-left-btn{
+  float:left;
+  background:linear-gradient(90deg,rgba(0,0,0,.2) 10%,transparent);
+}
+.wheel-right-btn{
+  float:right;
+  background:linear-gradient(90deg,transparent,rgba(0,0,0,.2) 10%);
+}
+/*选项卡导航部分*/
+.top-card{
+  width:30% !important;
+  margin:0 auto;
+}
+/*中间内容区域*/
+/*app下载的二维码图片*/
+.appload-img>div{
+  display: flex;
+  justify-content: space-between;
+  padding:30px 20px;
+}
+.appload-img>div img{display: inline-block;}
+.appload-img>div>a:last-child img{width:400px; height:110px;}
+/*今日推荐*/
+/*今日推荐标题——h1*/
+.recom-today>h1{
+  text-align: center;color:#666;
+  padding-left:20px;
+}
+.recom-today>h1>.bod-info{
+  display: inline-flex;
+  float:left;
+  height:30px;
+  font-size:1rem;
+  line-height: 30px;
+}
+.recom-today>h1>.bod-info>span{
+  background:#02db94;
+  color:#fff;
+}
+.recom-today>h1>.bod-info::before,.recom-today>h1>.bod-info::after{
+  width:30px;
+  background:#02db94;
+  color:#fff;
+}
+.recom-today>h1>.bod-info::before{
+  content:"";
+  border-radius: 100% 0 0 100%;
+  background-image:url(../img/index/jingl.png);
+}
+.recom-today>h1>.bod-info::after{
+  content:">";
+  border-radius: 0 100% 100% 0;
+}
+/*今日推荐详情——details*/
+.recom-today>.details{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.recom-detail{
+  width:25%; height:300px;
+  box-sizing:border-box;
+  padding-left:20px;
+  cursor: pointer;
+}
+/*设置图片高度*/
+.recom-detail .detail-img{height:60%;position: relative;}
+/*图片大小设置*/
+.recom-detail .detail-img img{width:100%; height:100%;}
+/*椭圆提示框设置*/
+.recom-detail>.detail-img>.bod-info{
+  display: inline-flex;
+  position: absolute;
+  top:5%; left:10%;
+  height:24px;
+  font-size:13px;
+  line-height: 24px;
+  color:#fff;
+}
+.recom-detail>.detail-img>.bod-info::before,
+.recom-detail .bod-info::after{
+  width:24px;
+  border:1px solid #fff;
+  background:rgba(144,144,144,0.5);
+}
+.recom-detail>.detail-img>.bod-info::before{
+  content:"商";
+  text-align: right;
+  border-radius: 50% 0 0 50%;
+  border-right:0;
+}
+.recom-detail>.detail-img>.bod-info::after{
+  content:"城";
+  border-radius: 0 50% 50% 0;
+  border-left:0;
+}  
+/*文字设置*/
+.detail-info{padding:10px;}
+.detail-info>h6{
+  font:bolder 15px "arial black";
+}
+.detail-info>h6>a{color:#000;}
+.detail-info>h6>a:hover{
+  color:#02db94;
+  text-decoration: none;
+}
+.detail-info>p{
+  padding:10px 0px;; 
+  font:bold 13px "arial black";color:#666;
+  margin-bottom:9px;
+}
+.detail-info>P>span>a{
+  font-size:16px;
+  color:#a00;
+}
+.detail-info>p>span{float:right;}
+/*穷游商城*/
+.qy-storm{background:#02db94;}
+.qy-storm h1{ 
+  text-align: center;
+  color:#fff;
+  padding:20px 0 10px;
+}
+.qy-storm h1 button{
+  float:right;
+  margin-top:20px;
+  border:0;
+  background:transparent;
+  font:16px "楷体";
+  color:#fff;
+}
+/*商城详情*/
+.storm-detail{
+  width:33.33333%; height:160px;
+  box-sizing: border-box;
+  padding-left:20px;
+
+}
+/*图片大小设置*/
+.storm-detail .storm-img{width:42%;position: relative;}
+.storm-img img{width:100%;height:100%;}
+/*提醒框*/
+.bod-remind{
+  display: inline-flex;
+  position: absolute;
+  top:0;
+}
+.bod-remind span{
+  height:30px;
+  padding:0 30px 0 10px;
+  background:#ff7362;
+  display: inline-block;
+  border-radius: 3px;
+  font:13px bold;
+  line-height: 30px;
+  color:#fff;
+}
+.bod-remind::after{
+  content:"";
+  display: inline-block;
+  position: absolute;
+  top:0;right:-20%;
+  width:30px; height:30px;
+  transform:skew(-20deg);
+  background:#ff7362;
+  border-radius: 0 3px 5px 0;
+}
+
+
+
+
