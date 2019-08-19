@@ -1,0 +1,41 @@
+.tip {
+    background: url(../img/tips/FqT8WjBBe6TTRNDm072ITHymvbWW.jpg) 100%;
+}
+
+.carousel-indicators>.round {
+    border-radius: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin: 0 4px;
+}
+
+.xb+.xb {
+    border-top: 3px solid #fff;
+}
+
+.bk+.bk {
+    border-left: 1px dashed #ccc;
+}
+
+.w-5 {
+    width: 5%;
+}
+
+.yy>div {
+    border-bottom: 1px solid #ddd;
+}
+
+.my_size {
+    font-size: 15px;
+}
+
+.carousel-indicators {
+    top: 90%
+}
+.pagination>.active>.page-link{
+    background: #060;
+    color: #fff !important;
+}
+.text_white{
+    color: #fff !important;
+}
