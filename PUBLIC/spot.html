@@ -35,26 +35,174 @@
             background: url("img/spot/15656907984443.jpg") 100%
         }
 
+        .spirit {
+            width: 12px;
+            height: 20px;
+            background: url("img/spirit/ui-icons_ffffff_256x240.png");
+            background-position: -65px -16px;
+        }
+
+
+
+        .dropdown a {
+            text-decoration: none;
+            color: #000;
+            display: inline-block;
+        }
+
+        .dropdown>a {
+            border: 1px solid #000;
+            padding: 6px 12px;
+        }
+
+        .dropdown-menu {
+            width: 200px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            /*border:1px solid #aaa;*/
+            box-shadow: 5px 5px 6px #000;
+            display:none;
+            /* height: 0px;
+            overflow: hidden;
+            transition: all .5s linear; */
+        }
+
+        .dropdown-menu a {
+            padding: 6px 20px;
+            width: 160px
+        }
+
+        .dropdown-menu li:hover {
+            background: #ddd
+        }
     </style>
 </head>
 
 <body>
     <div class="container-fluid px-0">
-        <div class="navbar navbar-expand-lg">
-            <ul class="navbar-nav m-auto">
-                <li class="nav-item"><a href="" class="nav-link">机酒自由行<img src="img/spirit/ui-icons_ffffff_256x240.png" class="" alt=""></a></li>
-                <li class="nav-item"><a href="" class="nav-link">优惠机票</a></li>
-                <li class="nav-item"><a href="" class="nav-link">跟团游<img src="img/spirit/ui-icons_ffffff_256x240.png" class="" alt=""></a></li>
-                <li class="nav-item"><a href="" class="nav-link">酒店</a></li>
-                <li class="nav-item"><a href="" class="nav-link">当地玩乐<img src="img/spirit/ui-icons_ffffff_256x240.png" class="" alt=""></a></li>
-                <li class="nav-item"><a href="" class="nav-link">签证</a></li>
-                <li class="nav-item"><a href="" class="nav-link">邮轮</a></li>
-                <li class="nav-item"><a href="" class="nav-link">河轮</a></li>
-                <li class="nav-item"><a href="" class="nav-link">保险</a></li>
-                <li class="nav-item"><a href="" class="nav-link">租车自驾</a></li>
-                <li class="nav-item"><a href="" class="nav-link">深度旅行<img src="img/spirit/ui-icons_ffffff_256x240.png" class="" alt=""></a></li>
-                <li class="nav-item"><a href="" class="nav-link">私人订制</a></li>
-            </ul>
+        <div class="bg-success">
+            <div class="m-auto row my-width">
+                <div class="col">
+                    <div class="dropdown">
+
+                        <a href="" data-trigger="dropdown" class="text-white">
+                            机酒自由行
+                            <div class="spirit"></div>
+                        </a>
+                        <div class="dropdown-menu bg-white rounded">
+                            <div class="row">
+                                <div class="col-3 py-2"><a href="" class="text-dark">全部</a></div>
+                                <div class="col-3 py-2"><a href="" class="text-dark">自由行</a></div>
+                                <div class="col-3 py-2"><a href="" class="text-dark">优惠机票</a></div>
+                                <div class="col-3 py-2"><a href="" class="text-dark">酒店</a></div>
+                                <div class="col-3 py-2"><a href="" class="text-dark">游轮</a></div>
+                                <div class="col-3 py-2"><a href="" class="text-dark">定制游</a></div>
+                                <div class="col-3 py-2"><a href="" class="text-dark">马尔代夫</a></div>
+                                <div class="col-3 py-2"><a href="" class="text-dark">海岛游</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href="" class="text-white ">
+                        <span class="float-left">优惠机票</span>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" class="text-white">
+                        <span class="float-left">跟团游</span>
+                        <div class="spirit float-left"></div>
+                    </a>
+                    <div class="clearfix"></div>
+                    <div class="row bg-white rounded">
+                        <div class="col-6 float-left py-2"><a href="" class="text-dark">全部</a></div>
+                        <div class="col-6 float-left py-2"><a href="" class="text-dark">跟团游</a></div>
+                        <div class="col-12 float-left py-2"><a href="" class="text-dark">半自助游</a></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href="" class="text-white ">
+                        <span class="float-left">酒店</span>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" class="text-white">
+                        <span class="float-left">当地玩乐</span>
+                        <div class="spirit float-left"></div>
+                    </a>
+                    <div class="clearfix"></div>
+                    <div class="row bg-white rounded">
+                        <div class="col-4 float-left py-2"><a href="" class="text-dark">全部</a>
+                        </div>
+                        <div class="col-4 float-left py-2"><a href="" class="text-dark">日游小团</a>
+                        </div>
+                        <div class="col-4 float-left py-2"><a href="" class="text-dark">深度体验</a>
+                        </div>
+                        <div class="col-6 float-left py-2"><a href="" class="text-dark">门票票券</a>
+                        </div>
+                        <div class="col-6 float-left py-2"><a href="" class="text-dark">餐饮美食</a>
+                        </div>
+                        <div class="col-4 float-left py-2"><a href="" class="text-dark">WiFi电话卡</a>
+                        </div>
+                        <div class="col-4 float-left py-2"><a href="" class="text-dark">购物</a>
+                        </div>
+                        <div class="col-4 float-left py-2"><a href="" class="text-dark">交通票券</a>
+                        </div>
+                        <div class="col-4 float-left py-2"><a href="" class="text-dark">接送机包车</a>
+                        </div>
+                        <div class="col-4 float-left py-2"><a href="" class="text-dark">保险</a>
+                        </div>
+                        <div class="col-4 float-left py-2"><a href="" class="text-dark">当日可订</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href="" class="text-white ">
+                        <span class="float-left">签证</span>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" class="text-white ">
+                        <span class="float-left">邮轮</span>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" class="text-white ">
+                        <span class="float-left">河轮</span>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" class="text-white ">
+                        <span class="float-left">保险</span>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" class="text-white ">
+                        <span class="float-left">租车自驾</span>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" class="text-white">
+                        <span class="float-left">深度旅行</span>
+                        <div class="spirit float-left"></div>
+                    </a>
+                    <div class="clearfix"></div>
+                    <div class="row bg-white rounded">
+                        <div class="col-6 float-left py-2"><a href="" class="text-dark">全部</a></div>
+                        <div class="col-6 float-left py-2"><a href="" class="text-dark">CityWalk</a>
+                        </div>
+                        <div class="col-6 float-left py-2"><a href="" class="text-dark">特色长线</a></div>
+                        <div class="col-6 float-left py-2"><a href="" class="text-dark">Q-Home</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href="" class="text-white ">
+                        <span class="float-left">私人订制</span>
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="my-width">
 
@@ -78,18 +226,26 @@
                 </ul>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <div class="carousel-control-prev-icon" aria-hidden="true"></div>
+                <div class="sr-only">Previous</div>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <div class="carousel-control-next-icon" aria-hidden="true"></div>
+                <div class="sr-only">Next</div>
             </a>
         </div>
         <div class="my-width">
 
         </div>
     </div>
+    <script>
+        console.log($("div.dropdown>a"))
+        $("div.dropdown>a").mouseover(function () {
+            $(".dropdown-menu").css("height", 160)
+        }).mouseout(function () {
+            $(".dropdown-menu").css("height", 100)
+        })
+    </script>
 </body>
 
 </html>
