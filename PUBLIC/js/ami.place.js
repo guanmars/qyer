@@ -33,12 +33,17 @@ function shows(parent){
     start = $span.position().left - $(".box").position().left;
     wide = $span.css("width");
     //css()函数可以用对象设置多个属性值
-    $line.css({ "width": wide, "margin-left": start });
+    $line.css({ "width": wide, "margin-left": start })
     //2. 鼠标移动时下面ul跟着变化，
+    $span.css("color","#000").on("mouseleave",function(){
+      var $span=$(this);
+      $span.css("color","#959595")
+    })
     var id = $span.attr("data-id");
     $("#" + id).addClass("in").siblings(".content").removeClass("in");
   })
 }
 shows(".box");
 shows(".box1");
+shows(".box3");
 })

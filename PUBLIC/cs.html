@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+  <title>穷游网|出境游目的地旅游攻略_出国旅游目的地指南_旅游景点推荐</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/comm.css">
+  <link rel="stylesheet" href="css/ami_place.css">
+  <style>
+ 
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <!--月度推荐-->
+  <div class="box2">
+        <h1 class="title">月度推荐</h1>
+        <div class="box-tab">
+          <ul class="tab1">
+            <li><span class="content in">1月</span></li>
+            <li><span class="content">2月</span></li>
+            <li><span class="content">3月</span></li>
+            <li><span class="content">4月</span></li>
+            <li><span class="content">5月</span></li>
+            <li><span class="content">6月</span></li>
+            <li><span class="content">7月</span></li>
+            <li><span class="content">8月</span></li>
+            <li><span class="content">9月</span></li>
+            <li><span class="content">10月</span></li>
+            <li><span class="content">11月</span></li>
+            <li><span class="content">12月</span></li>
+          </ul>
+
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+<script>
+    
+  $(".tab1>li>span")
+  .on("mouseenter", function () {
+    var $span = $(this);
+    $span.toggleClass("in");
+    $(".tab1>li>span:")(".countent").removeClass("in ");
+  })
+</script>
+</html>
