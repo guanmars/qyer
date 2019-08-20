@@ -1,0 +1,102 @@
+*{
+  margin:0 auto;
+  padding:0px;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+input{
+  height:40px;
+  border:1px solid #d7d7d7;
+}
+.content{
+  height:800px;
+  background: url("../img/login_logo.jpg");
+  background-size:100%;
+  background-repeat:no-repeat;
+  position: relative;
+}
+.login-logo{
+ text-align: center;
+ color:#fff;
+ display: block;
+ margin:0 auto;
+position: absolute;
+top:-90px;
+left:0;
+width:100%;
+}
+.login-logo img{
+  width:127px;height:46px;
+  vertical-align:bottom;
+  border:0;
+}
+.login-logo span{
+  font-size:24px;
+}
+.login{
+  width: 380px;
+  height:467px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-left:-190px;
+  margin-top: -233.5px;
+  background: #fff;
+}
+.login-content{
+  width:330px;
+  margin:30px auto;
+}
+.select{
+ width:78px;
+ height:40px; 
+}
+.section input{
+  width:245px;
+}
+.gen-wrap{
+  font-size:0;
+}
+.gen-wrap>*{
+  height:40px;
+}
+.code-wrap>input{
+  width:200px;
+  display: inline-block;
+  vertical-align: top;
+}
+.code-wrap>img{
+  width:126px;
+  display: inline-block;
+  vertical-align: top;
+}
+.code-wrap>button{
+  width:125px;
+  color:#fff;
+  font-size: 14px;
+  background:#3f9f5f;
+  border-radius:5px;
+}
+.code-wrap>button:hover{
+  background:rgb(109,182,85);
+}
+.input{
+  width: 100%;
+  height:40px;
+}
+.reg-button{
+  width:100%;height:36px;
+  font-size:15px;
+  color:#fff;
+  background:#3f9f5f;
+  border-radius: 5px;
+}
+.content span{
+  color:#d7d7d7;
+  font-size:14px;
+}
+.content a{
+  color: #3f9f5f;
+}

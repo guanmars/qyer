@@ -53,42 +53,42 @@ ul{
     background-repeat: no-repeat;
     }
     /*热门城市推荐*/
-.box .title{
+.title{
      text-align: center;
      font-size: 24px;
      margin-bottom: 35px;
      }
-.box{
+.box,.box1{
      width:980px;
      margin: 70px auto 0;
      position:relative;
     }
 
-.box .box-tab ul{
+.box-tab ul{
       list-style: none;
     }    
-.box .box-tab .tab{
+.box-tab .tab{
       display: flex;
       font-size: 18px;
       justify-content: center;
       color: #929292;
       /*margin-bottom: 40px;*/
     }    
-.box .box-tab .tab li{
+.box-tab .tab li{
       padding-right:50px;
       border-bottom: 1px solid #e5e5e5;
       padding-bottom: 5px;
       cursor: pointer;
     }    
-.box .box-tab .tab li .in{
+.box-tab .tab li .in{
       color: #000;
       border-bottom: 2px solid #28b76c;
       padding-bottom: 5px; 
     }    
-.box .box-tab .tab li:last-child{
+.box-tab .tab li:last-child{
       padding-right:0;
     }
-.box .box-tab .item dl{
+.box-tab .item dl{
     float: left;
     width: 306px;
     font-weight: initial;
@@ -96,37 +96,37 @@ ul{
     margin-bottom: 50px;
 }
  
-.box .box-tab .item dt{
+.box-tab .item dt{
     font-weight: initial;
     margin-bottom: 12px;
 }    
-.box .box-tab .item dl:first-child{
+.box-tab .item dl:first-child{
     padding-right: 20px;
 }    
-.box .box-tab .item dl:nth-child(2){
+.box-tab .item dl:nth-child(2){
     padding: 0 10px;
 }    
-.box .box-tab .item dl:last-child{
+.box-tab .item dl:last-child{
     padding-left:20px;
 }    
-.box .box-tab .item dl a{
+.box-tab .item dl a{
     font-size: 14px;
     color:#444;
     text-decoration: none;
     margin-right: 12px;
     display: inline-block;
 }
-.box .btn-container{
+.btn-container{
     text-align: center;
     margin-bottom: 68px;
 } 
-.box .btn-container a{
+.btn-container a{
     text-decoration: none;
     padding:15px 50px;
     border: 1px solid #28b76c;
     color: #28b76c;
 } 
-.box .btn-container a:hover{
+.btn-container a:hover{
     background: #28b76c;
     color:#fff;
 }
@@ -137,17 +137,17 @@ ul{
     transition:margin-left 1s;
     margin-bottom:40px;
 }
-.box .box-tab li:after{
+.box-tab li:after{
     display: block;
     content: '.';
     clear: both;
     line-height: 0;
     visibility: hidden;
 }
-.box .box-tab .fade{
+.box-tab .fade{
     display:none;
 }
-.box .box-tab .in{
+.box-tab .in{
     display: block;
     opacity: 1;
 }
@@ -156,7 +156,29 @@ ul{
     width:100%;
     height: 400px;
 }
-
+.card1 li{
+    position: relative;
+    overflow: hidden;
+}
+.card1 img,.card1 div{
+    position: absolute;
+}
+.card1 div{
+    height: 100%;
+    padding: 22px 15px;
+    color: #fff;
+    transition: all 1s;
+}
+.card1>ul>li:not(:first-child) div{margin-top:60%;}
+.card1>ul>li:first-child div{margin-top:147%;}
+.card1 h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+}
+.card1 span{
+    font-size: 12px;
+}
 .card1 ul li~li{
     width: 236px;
     height: 194px;
@@ -168,7 +190,38 @@ ul{
     height: 400px;
     float: left;
 }
-.card1 ul .d1{
+.card1 img:first-child{
+    height:100%;
+}
+.card1 ul li:not(:first-child) img{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.card1 ul .d1{
     background: url("../img/ami_place/02.jpg") no-repeat;
     background-size: cover;
 }
@@ -195,4 +248,4 @@ ul{
 .card1 ul .d7{
     background: url("../img/ami_place/08.jpg") no-repeat;
     background-size: cover;
-}
+}*/

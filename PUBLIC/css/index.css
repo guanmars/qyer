@@ -5,6 +5,7 @@ a{text-decoration: none;}
   width:100%; height:635px;
   background:url(../img/index/banner2.jpg);
 }
+<<<<<<< HEAD
 /*导航栏左边部分*/
 .top-nav{
   display: flex;
@@ -239,3 +240,5 @@ a{text-decoration: none;}
 
 
 
+=======
+>>>>>>> 12ce50b38b084cada4ecc33fb44db04a2d250617
