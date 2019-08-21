@@ -1,0 +1,43 @@
+ <!-- <div class="details"> 
+
+       <div class="tupian">
+           <div class="details-img">
+                <img src="img/travel_plan/325x240 (3).jpg" alt="">
+    图片里的button按钮框-->
+                <div class="anniu position-absolute ml-2 mt-2">
+                    <a href="" class="btn btn-info" >复制</a>
+                </div>
+                <!--图片里的文字-->
+                <div class="position-absolute wenzi">
+                    <!--大文字-->
+                   <div class="dawenzi position-absolute">
+                    <span>12<span class="xiaowenzi ">天</span></span>
+                   </div>
+                   <div class="xiaowenzi1">
+                       <span>2026-03-01 出发</span>
+                       <br>
+                       <span>巴黎罗马巴塞罗那</span>
+                   </div>
+                </div>    
+           </div>
+           <!--文字部分-->
+           <div>
+               <!--图片下面的文字-->
+              <div class="position-absolute bjwz">
+                  <p class="my-0">香港 · 上海 · 巴黎 · 罗马 · 梵蒂冈 · 巴塞罗</p>
+                  <p class="float-left ml-3">&nbsp;那</p>
+              </div>
+            <!--最后一行文字-->
+              <div class="position-absolute zh">
+                 <ul class="zh1">
+                    <li class="t1"><img src="img/travel_plan/xiaoren.png" alt=""></li>
+                    <li class="t2"><a href="">Finddingiris</a></li>
+                    <li class="t3"><a href=""><img src="img/travel_plan/yanjing.png" alt=""></a></li>
+                    <li class="t4"><a href="">45</a></li>
+                    <li class="t5"><a href="">|</a></li>
+                    <li class="t6"><a href=""><img src="img/travel_plan/benzi.png" alt=""></a></li>
+                    <li class="t7"><a href="">179</a></li>
+                 </ul>
+              </div>
+           </div>
+    -->
