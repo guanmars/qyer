@@ -1,5 +1,6 @@
 .my-width{padding: 0 10px;}
 a,a:hover{text-decoration: none;}
+ul{list-style: none;}
 button:hover{box-shadow: 0 0 2px 2px #ddd;}
 .top-wheel{
   position:relative;
@@ -164,15 +165,24 @@ button:hover{box-shadow: 0 0 2px 2px #ddd;}
   content:"";
   width:30px;
   position: absolute;
-  top:0;right:-20%;
+  top:0;right:-10%;
   transform:skew(-20deg);
   border-radius: 0 3px 5px 0;
+}
+/*—————————    按钮    ———————————*/
+.more-detail>button{
+  width:100%;height:100%; 
+  text-align:center;line-height: 100%;
+  background:#fff;
+  border-radius: 3px;
+  outline:none;border:0;
+  cursor: pointer;
 }
 /*————————   h1标题：title  ———————————*/
 .recom-today>h1,.qy-storm h1,.travel-topic>h1{
   text-align: center;
   padding-left:20px;
-  font-size:28px;
+  font-size:32px;
 }
 
 /*————————   详情部分：details  ———————————*/
@@ -239,7 +249,7 @@ button:hover{box-shadow: 0 0 2px 2px #ddd;}
 /*
           —————————  穷游商城   .qy-storm  —————————————
 */
-.qy-storm{background:#02db94;}
+.qy-storm{background:#02db94;padding-bottom:20px;}
 .qy-storm h1{color:#fff;padding-top:40px;}
 /*---试一试----*/
 .qy-storm h1 button{
@@ -277,16 +287,10 @@ button:hover{box-shadow: 0 0 2px 2px #ddd;}
 }
 .storm-detail .detail-text>a>span{font-size:1.7rem;}
 /*---  底部按钮  .more-detail ---*/
-.more-detail{text-align:center;}
-.more-detail>button{
-  width:200px; height:45px; 
-  background:#fff;
-  border-radius: 3px;
+.qy-storm .more-detail,.travel-topic .more-detail{
+  width:200px; height: 45px;
   font-size:16px;
-  line-height: 45px;
-  outline:none;border:0;
-  margin-bottom:20px;
-  cursor: pointer;
+  margin:0 auto;
 }
 /*
              —————————  游记与话题  .travel-topic  ——————————
@@ -320,7 +324,7 @@ button:hover{box-shadow: 0 0 2px 2px #ddd;}
 }
 /*----- 轮播图标---*/
 ul.cursel-icon{
-  display: flex;list-style: none;
+  display: flex;
   justify-content: center;
 }
 ul.cursel-icon>li{
@@ -334,7 +338,78 @@ ul.cursel-icon>li:hover{background:#02db94;}
   background:transparent;
   border:1px solid #ddd;
 }
-/*———————————————————————*/
+/*——————————  特别策划 .special-plan  ——————————*/
+.special-plan{background: #eee;}
+.qy-hall{width:25%;padding-left:20px;}
+.qy-hall h4,.qy-plan h4{padding:10px 0;font-size:28px;}
+.qy-hall .detail-img{position: relative;height:160px; }
+.qy-hall .detail-img>p{
+  position: absolute;
+  top:50%; right:40%;
+  font:bolder 13px "arial black";
+  color:#fff;
+}
+.qy-hall .detail-text{color:#666;background: #fff;}
+.detail-text .price-detail{
+  border-bottom:1px solid #999;
+  padding-bottom:15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/**/
+.detail-text .price-detail>a{display: inline-block;}
+.detail-text .price-detail>a:first-child{font-size:12px; color:#666;}
+.detail-text .price-detail>a:first-child>span{font-size:28px;color:#ff7362}
+/*---查看详情---*/
+.detail-text .price-detail>a:last-child{
+  background:#ff7362;
+  width:100px; height:34px;
+  font:bolder 13px "arial black"; color:#fff;
+  line-height: 34px; text-align: center;
+}
+/*---用户图像的轮播图---*/
+ul.avatar-wheel::after{
+  content:"";
+  display: block;
+  clear:both;
+}
+ul.avatar-wheel>li{
+  width:16.66666%;height:16.66666%;
+  padding:5px;
+  float:left;
+}
+ul.avatar-wheel>li:first-child{font-size:12px;}
+ul.avatar-wheel>li>img{
+  border-radius: 50%;
+  width:100%;height:100%;
+}
+/*----查看过往 button---*/
+.qy-hall .more-detail{
+  width:100%;height:45px;
+  border:1px solid #02db94;
+  font-size:14px;
+  margin:15px 0 0;
+}  
+/*-----  图片部分 .qy-plan-------*/
+.qy-plan{width:75%;padding-left:20px;}
+.qy-plan h4>a{
+  float:right;
+  font-size:22px;color:#666;
+}
+.qy-plan .detail-img{height:404px;}
+.qy-plan .detail-img>li{
+  float:left;
+  width:33.333333%;padding-left:15px;
+  background:#444;
+}
+.qy-plan .detail-img>li:first-child{
+  height:100%; padding-left:20px;
+  background:url();
+}
+.qy-plan .detail-img>li:not(:first-child){height:50%;}
+
+
 
 
 
