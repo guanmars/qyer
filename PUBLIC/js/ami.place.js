@@ -47,3 +47,21 @@ shows(".box");
 shows(".box1");
 shows(".box3");
 })
+
+$(function(){
+  function ups(d1,prec){
+    console.log(prec);
+    $(`${d1}`).on("mouseenter", function () {
+      $(this).children(":last-child").css({
+        "margin-top": 0,
+        "background": "rgba(0,0,0,.5)"
+      })
+    })
+      .on("mouseleave", function(){
+        $(this).children(":last-child").css({"margin-top": prec, "background": "rgba(0,0,0,0)"})
+      })
+  }
+  ups(".card1>ul>li:first-child","148%");
+  ups(".card1>ul>li:not(:first-child)","60%");
+  ups(".card2>ul>li","130%")
+})

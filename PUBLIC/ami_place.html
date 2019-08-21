@@ -674,18 +674,18 @@
     <h1 class="title">月度推荐</h1>
     <div class="box-tab">
       <ul class="tab1">
-        <li><span class="content in" data-id="content12">1月</span></li>
-        <li><span class="content" data-id="content13">2月</span></li>
-        <li><span class="content" data-id="content14">3月</span></li>
-        <li><span class="content" data-id="content15">4月</span></li>
-        <li><span class="content" data-id="content16">5月</span></li>
-        <li><span class="content" data-id="content17">6月</span></li>
-        <li><span class="content" data-id="content18">7月</span></li>
-        <li><span class="content" data-id="content19">8月</span></li>
-        <li><span class="content" data-id="content20">9月</span></li>
-        <li><span class="content" data-id="content21">10月</span></li>
-        <li><span class="content" data-id="content22">11月</span></li>
-        <li><span class="content" data-id="content23">12月</span></li>
+        <li class="content in" data-id="content12">1月</li>
+        <li class="content" data-id="content13">2月</li>
+        <li class="content" data-id="content14">3月</li>
+        <li class="content" data-id="content15">4月</li>
+        <li class="content" data-id="content16">5月</li>
+        <li class="content" data-id="content17">6月</li>
+        <li class="content" data-id="content18">7月</li>
+        <li class="content" data-id="content19">8月</li>
+        <li class="content" data-id="content20">9月</li>
+        <li class="content" data-id="content21">10月</li>
+        <li class="content" data-id="content22">11月</li>
+        <li class="content" data-id="content23">12月</li>
       </ul>
       <div class="card2">
         <ul id="content12" class="content fade in">
@@ -2554,24 +2554,38 @@
     var id = $span.attr("data-id");
     $("#" + id).addClass("in").siblings(".content").removeClass("in");
   })
-*/
-  $(".card1 li").on("mouseenter", function () {
+
+  $(".card1>ul>li:first-child").on("mouseenter", function () {
+    console.log($(this))
     var $divs = $(this);
-    $divs.children(":last-child").css({
+    $(this).children(":last-child").css({
       "margin-top": 0,
       "background": "rgba(0,0,0,.5)"
     })
   })
     .on("mouseleave", function () {
       var $divs = $(this);
-      $divs.children(":last-child").first().css({ "margin-top": "150%", "background": "rgba(0,0,0,0)" })
-        .siblings({ "margin-top": "60%", "background": "rgba(0,0,0,0)" });
+      $(this).children(":last-child").css({ "margin-top": "148%", "background": "rgba(0,0,0,0)" })
     })
 
 
+  $(".card1>ul>li:not(:first-child)").on("mouseenter", function () {
+    console.log($(this))
+    var $divs = $(this);
+    $(this).children(":last-child").css({
+      "margin-top": 0,
+      "background": "rgba(0,0,0,.5)"
+    })
+  })
+    .on("mouseleave", function () {
+      var $divs = $(this);
+      $(this).children(":last-child").css({ "margin-top": "60%", "background": "rgba(0,0,0,0)" })
+    })
+*/
+
 
   /*月度推荐*/
-  $(".tab1>li>span").on("mouseenter", function () {
+  $(".tab1>li").on("mouseenter", function () {
     var $span = $(this);
     console.log($span.siblings())
     $span.addClass("in").siblings(".content").removeClass("in");

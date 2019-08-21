@@ -135,7 +135,7 @@ ul{
     border-top:2px solid #28b76c;
     display: block;
     margin:0;padding:0;
-    transition:margin-left 1s;
+    transition:margin-left .5s;
     margin-bottom:40px;
 }
 .box-tab li:after{
@@ -245,24 +245,28 @@ ul{
     font-size: 18px;
     justify-content: center;
     color: #929292;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   }    
 .box-tab .tab1 li{
     cursor: pointer;
+    width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 50px;
   } 
 .box-tab .tab1 li:not(:last-child){
-    padding-right:25px;
-    cursor: pointer;
-  } 
-.box-tab .tab1 li span{
+    margin-right: 25px;  
+}
+/*.box-tab .tab1 li span{
    width: 50px;
    height: 50px;
    display: inline-block;
    border-radius: 50%;
    text-align: center;
    line-height: 50px;
-  }
-  .box-tab .tab1 li .in{
+  }*/
+  .box-tab .tab1 .in{
       background: #28b76c;
       color: #fff;
   }
@@ -305,7 +309,7 @@ ul{
 .end ul li .item a:hover{
    color:lightgreen;
 }
-.box3{margin-bottom: }
+
 
 
 
