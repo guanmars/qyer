@@ -1,0 +1,251 @@
+.container-fluid{
+    padding: 0; 
+}
+ul{
+    padding: 0;
+}
+.banner{
+     background:url(../img/ami_place/01.jpg) no-repeat;
+     background-size:100%;
+     width: 100%;height: 640px;
+}
+.banner h1{text-align: center;}
+.banner .search{
+     width:760px;
+     height: 60px;
+     margin: 0 auto;
+     position: relative;
+    }
+     
+.banner h1{
+    color: #fff;
+    font-size: 56px;
+    margin-top: 162px;
+    font-weight: 700;
+    text-shadow: 0 5px 5px rgba(0,0,0,.1);
+    }     
+.banner .search input{
+     width: 620px;
+     height: 60px;
+     box-sizing: border-box;
+     padding: 20px;
+     position: absolute;
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+     outline: none;
+    }
+.banner .search .search-right{
+    position: absolute;
+    width: 140px;
+    height: 60px;
+    left: 620px;
+    text-align: center;
+    line-height: 60px;
+}    
+.banner .search a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 17px 52px;
+    background-color: #28b76c;
+    background-image: url(../img/ami_place/0114c0187e1f5b9fe65524777eaac15.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    }
+    /*热门城市推荐*/
+.title{
+     text-align: center;
+     font-size: 24px;
+     margin-bottom: 35px;
+     }
+.box,.box1{
+     width:980px;
+     margin: 70px auto 0;
+     position:relative;
+    }
+
+.box-tab ul{
+      list-style: none;
+    }    
+.box-tab .tab{
+      display: flex;
+      font-size: 18px;
+      justify-content: center;
+      color: #929292;
+      /*margin-bottom: 40px;*/
+    }    
+.box-tab .tab li{
+      padding-right:50px;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 5px;
+      cursor: pointer;
+    }    
+.box-tab .tab li .in{
+      color: #000;
+      border-bottom: 2px solid #28b76c;
+      padding-bottom: 5px; 
+    }    
+.box-tab .tab li:last-child{
+      padding-right:0;
+    }
+.box-tab .item dl{
+    float: left;
+    width: 306px;
+    font-weight: initial;
+    box-sizing: content-box;
+    margin-bottom: 50px;
+}
+ 
+.box-tab .item dt{
+    font-weight: initial;
+    margin-bottom: 12px;
+}    
+.box-tab .item dl:first-child{
+    padding-right: 20px;
+}    
+.box-tab .item dl:nth-child(2){
+    padding: 0 10px;
+}    
+.box-tab .item dl:last-child{
+    padding-left:20px;
+}    
+.box-tab .item dl a{
+    font-size: 14px;
+    color:#444;
+    text-decoration: none;
+    margin-right: 12px;
+    display: inline-block;
+}
+.btn-container{
+    text-align: center;
+    margin-bottom: 68px;
+} 
+.btn-container a{
+    text-decoration: none;
+    padding:15px 50px;
+    border: 1px solid #28b76c;
+    color: #28b76c;
+} 
+.btn-container a:hover{
+    background: #28b76c;
+    color:#fff;
+}
+.tab-line{
+    border-top:2px solid #28b76c;
+    display: block;
+    margin:0;padding:0;
+    transition:margin-left 1s;
+    margin-bottom:40px;
+}
+.box-tab li:after{
+    display: block;
+    content: '.';
+    clear: both;
+    line-height: 0;
+    visibility: hidden;
+}
+.box-tab .fade{
+    display:none;
+}
+.box-tab .in{
+    display: block;
+    opacity: 1;
+}
+   /*主题目的地*/
+.card1{
+    width:100%;
+    height: 400px;
+}
+.card1 li{
+    position: relative;
+    overflow: hidden;
+}
+.card1 img,.card1 div{
+    position: absolute;
+}
+.card1 div{
+    height: 100%;
+    padding: 22px 15px;
+    color: #fff;
+    transition: all 1s;
+}
+.card1>ul>li:not(:first-child) div{margin-top:60%;}
+.card1>ul>li:first-child div{margin-top:147%;}
+.card1 h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+}
+.card1 span{
+    font-size: 12px;
+}
+.card1 ul li~li{
+    width: 236px;
+    height: 194px;
+    margin:0 0 12px 12px;
+    float: left;
+}
+.card1 ul li:first-child{
+    width:236px;
+    height: 400px;
+    float: left;
+}
+.card1 img:first-child{
+    height:100%;
+}
+.card1 ul li:not(:first-child) img{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.card1 ul .d1{
+    background: url("../img/ami_place/02.jpg") no-repeat;
+    background-size: cover;
+}
+.card1 ul .d2{
+    background: url("../img/ami_place/03.png") no-repeat;
+    background-size: cover;
+}
+.card1 ul .d3{
+    background: url("../img/ami_place/04.jpg") no-repeat;
+    background-size: cover;
+}
+.card1 ul .d4{
+    background: url("../img/ami_place/05.png") no-repeat;
+    background-size: cover;
+}
+.card1 ul .d5{
+    background: url("../img/ami_place/06.jpg") no-repeat;
+    background-size: cover;
+}
+.card1 ul .d6{
+    background: url("../img/ami_place/07.png") no-repeat;
+    background-size: cover;
+}
+.card1 ul .d7{
+    background: url("../img/ami_place/08.jpg") no-repeat;
+    background-size: cover;
+}*/
