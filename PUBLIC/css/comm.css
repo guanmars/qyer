@@ -5,5 +5,9 @@ ul {
     padding: 0;
 }
 /*页面内容区域的宽度,所有内容总宽度一致*/
+<<<<<<< HEAD
+.my-width{width:1200px;margin:0 auto;}
+=======
 
 .my-width{width:1200px;margin:0 auto;}
+>>>>>>> 6f221705a0c4b33ffc1389d1b39cde6a5a76f9c1

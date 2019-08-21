@@ -1,0 +1,744 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+       <title>Document</title>
+       <link rel="stylesheet" href="css/bootstrap.css">
+       <script src="js/jquery.min.js"></script>
+       <script src="js/popper.min.js"></script>
+       <script src="js/bootstrap.min.js"></script>
+       <script src="js/vue.js"></script>
+       <link rel="stylesheet" href="css/normalize.css">
+       <link rel="stylesheet" href="css/comm.css">
+       <link rel="stylesheet" href="css/travel_plan.css">
+   </head>
+   <body>
+    <div class="container-fluid p-0">
+        <!--首页行程小助手logo-->
+        <!--顶部导航栏-->
+        <div class="gdtt">
+            <!-- logo图片 -->
+            <div class="float-left ml-5 mt-3">
+                <a href=""><img src="img/travel_plan/logo.png" alt=""></a>
+            </div>
+            <!--文字导航-->
+            <ul class="float-right mt-3">
+                <li class="a1"><a href="">使用帮助</a></li>
+                <li class="ml-4 a1"><a href="">APP下载</a></li>
+                <li class="ml-4 a1"><a href="">免费私人订制</a></li>
+                <li class="ml-4 a1"><a href="">企业版</a></li>
+            </ul>
+        </div>
+        <!-- 顶部图片视频部分 -->
+      <div class="top-img">
+      <!--绿色背景大图-->
+        <!--背景图里的第一行文字-->
+        <div class="divdx">
+            <a href="" class="ml-5" >
+                <span class="sp">播放视频介绍</span>
+            </a>
+            <!-- 文字图片 -->
+            <div class="bjt1"></div> 
+            <p  class="mt-4 p1 mr-5">共有&nbsp;1301&nbsp;万穷游er,创建了&nbsp;28,467,197 &nbsp;个行程</p>
+            <!--地图的动画图片-->
+            <div class="tu1 my-0 py-0">
+                <img src="img/travel_plan/_20190816201644.png" class="tu1" alt="">
+            </div>
+            <!--视频播放-->
+            <div class="js"></div>
+                    <!-- 创建行程按钮 -->
+            <div class='text-center xcan1' id="app">
+                <button class="xcan mt-4 pb-1" @click="sj" > 
+                    <span class="ziti">+</span> &nbsp;&nbsp; 创建新的行程
+                </button>
+                <br>
+             <div class="jssj" :style="css1">
+                <a href="">
+                    私人订制
+                </a>
+         
+                <a href="">
+                        帮我定制
+                </a>
+             </div>
+            </div>
+        </div>
+    </div>    
+    <!--第一个文字边框-->
+    <div class="top-nav">
+         <!--背景小的第一行字-->
+         <div class="text-center">
+                <h3><br><br>不想自己做行程，为什么不看看别人的 ?</h3>
+        </div>
+        <!--导航-->
+        <div class="kuang mt-5">
+                    <div class="kuang1 mt-2">
+                        <span class="">目的地:</span>
+                        <ul class="mt-3">
+                            <li class="ml-2"><a href=""  >中国</a></li>
+                            <li><a href="">泰国</a></li>
+                            <li><a href="">日本</a></li>
+                            <li><a href="">法国</a></li>
+                            <li><a href="">美国</a></li>
+                            <li><a href="">韩国</a></li>
+                            <li><a href="">马来西亚</a></li>
+                            <li><a href="">意大利</a></li>
+                            <li><a href="">新加坡</a></li>
+                            <li><a href="">德国</a></li>
+                            <li><a href="">西班牙</a></li>
+                            <li><a href="">英国</a></li>
+                        </ul>    
+                        <span class="float-right mr-3"><a href="" >V 更多</a></span>
+                    </div>
+                    <div class="clearfix xuxian pb-3"></div>
+                    <!--出行时间-->
+                    <div class="kuang2 mt-2" ">
+                            <span class="">出行时间:</span>
+                            <ul class="mt-3">
+                                <li class="ml-2"><a href=""  >一月</a></li>
+                                <li><a href="">二月</a></li>
+                                <li><a href="">三月</a></li>
+                                <li><a href="">四月</a></li>
+                                <li><a href="">五月</a></li>
+                                <li><a href="">六月</a></li>
+                                <li><a href="">七月</a></li>
+                                <li><a href="">八月</a></li>
+                                <li><a href="">九月</a></li>
+                                <li><a href="">十月</a></li>
+                                <li><a href="">十一月</a></li>
+                                <li><a href="">十二月</a></li>
+                                <li><a href="">新年</a></li>
+                            </ul>    
+                            <span class="float-right mr-3"><a href="" >V 更多</a></span>
+                        </div>
+                        <!--清楚浮动效果，加下虚线-->
+                     <div class="clearfix xuxian pb-3"></div>
+                        <!--出行天数-->
+                        <div class="kuang2 mt-2" ">
+                                <span class="">出行时间:</span>
+                                <ul class="mt-3">
+                                    <li class="ml-2"><a href=""  >一月</a></li>
+                                    <li><a href="">3天及以下</a></li>
+                                    <li><a href="">4天至7天</a></li>
+                                    <li><a href="">8天至14天</a></li>
+                                    <li><a href="">14天至20天</a></li>
+                                    <li><a href="">20天以上</a></li>
+                                </ul>    
+                            </div>
+                        <!--清楚浮动效果，加下虚线-->
+                    <div class="clearfix xuxian pb-3"></div> 
+                    <!--出行城市-->
+                    <div class="kuang2 mt-2" ">
+                            <span class="">出发城市:</span>
+                            <ul class="mt-3">
+                                <li class="ml-2"><a href=""  >北京</a></li>
+                                <li><a href="">上海</a></li>
+                                <li><a href="">广州</a></li>
+                                <li><a href="">深圳</a></li>
+                                <li><a href="">重庆</a></li>
+                                <li><a href="">成都</a></li>
+                                <li><a href="">杭州</a></li>
+                                <li><a href="">香港</a></li>
+                            </ul>    
+                        </div> 
+                          <!--清楚浮动效果，加下虚线-->
+                          <div class="clearfix xuxian pb-3"></div>     
+                           <!--行程主题-->
+                           <div class="kuang2 mt-2" ">
+                                <span class="">行程主题:</span>
+                                <ul class="mt-3">
+                                    <li class="ml-2"><a href=""  >美食</a></li>
+                                    <li><a href="">人文</a></li>
+                                    <li><a href="">购物</a></li>
+                                    <li><a href="">游园观光</a></li>
+                                    <li><a href="">娱乐休闲</a></li>
+                                    <li><a href="">沙滩海岛</a></li>
+                                    <li><a href="">户外</a></li>
+                                    <li><a href="">自然风光</a></li>
+                                </ul>    
+                                <span class="float-right mr-3"><a href="" >+ 多选</a></span>
+                            </div>   
+                              <!--清除浮动效果，加下虚线-->
+                              <div class="clearfix xuxian pb-3"></div> 
+                           <!--精华等级-->
+                           <div class="kuang2 mt-2" ">
+                                <span class="">精华等级:</span>
+                                <ul class="mt-3">
+                                    <li class="ml-2"><a href=""  >一级精华</a></li>
+                                    <li><a href="">二级精华</a></li>
+                                    <li><a href="">三级精华</a></li>
+                                </ul>    
+                      </div>                 
+                <br>
+        </div>
+        <!--默认排序 搜索框-->
+        <div class="mt-4 wkuang">
+                <a href="" class="float-left" >默认排序</a>
+                <span class="float-left ml-3">|</span>
+                <span class="float-left">浏览次数最多</span>
+                <span class="float-left">|</span>
+                <span class="float-left mr-4">复制最多次数</span>
+                <span class="float-right mb-2 ">150个行程  <input type="text" placeholder="在当前结果下搜索" class="py-2 px-5 ml-3" ></span>         
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!--图片  第一行-->
+<!--主体部分，所有的图片     .main-->  
+    <div class="main">
+        <!--第一个图-->
+        <div class="details">
+            <div class="detail-img">
+                <img src="img/travel_plan/325x240 (3).jpg">
+                <div class="img-txt">
+                    <p>  12  <span>天</span>  </p>
+                    <p><span>2026-03-01 出发</span><br>
+                        巴黎罗马巴塞罗那
+                    </p>
+                </div>
+            </div>
+            <div class="detail-text">
+                <p>香港 · 上海 · 巴黎 · 罗马 · 梵蒂冈 · 巴塞罗</p>
+                <div class="text-icon">
+                    <a href="">
+                        <img src="img/travel_plan/xiaoren.png" alt="">Finddingiris
+                    </a>
+                    <p>
+                        <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                        <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--第二个图-->
+        <div class="details">
+                <div class="detail-img">
+                    <img src="img/travel_plan/325x240 (1).jpg">
+                    <div class="img-txt">
+                        <p>  13  <span>天</span>  </p>
+                        <p><span>2026-03-01 出发</span><br>
+                            魔芋菌的奥捷行程
+                        </p>
+                    </div>
+                </div>
+                <div class="detail-text">
+                    <p>北京 · 布拉格 · 库特纳霍拉 · 捷克克鲁姆洛夫 · 萨尔茨堡 · 哈尔施塔特 · 维也纳</p>
+                    <div class="text-icon">
+                        <a href="">
+                            <img src="img/travel_plan/xiaoren.png" alt="">魔芋茵
+                        </a>
+                        <p>
+                            <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                            <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <!--第三个图-->
+        <div class="details">
+                    <div class="detail-img">
+                        <img src="img/travel_plan/325x240 (4).jpg">
+                        <div class="img-txt">
+                            <p>  11  <span>天</span>  </p>
+                            <p><span>2026-03-01 出发</span><br>
+                                新西兰岛自驾行
+                            </p>
+                        </div>
+                    </div>
+                    <div class="detail-text">
+                        <p>上海 · 广州 · 基督城 · 库克山镇 · 蒂卡普湖 · 库克山国家公园 · 瓦纳卡 · 箭镇 · 皇后镇</p>
+                        <div class="text-icon">
+                            <a href="">
+                                <img src="img/travel_plan/xiaoren.png" alt="">
+                                天道为名
+                            </a>
+                            <p>
+                                <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                                <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                            </p>
+                        </div>
+                    </div>
+        </div>
+        <!--第四个图-->
+        <div class="details">
+                        <div class="detail-img">
+                            <img src="img/travel_plan/325x240 (5).jpg">
+                            <div class="img-txt">
+                                <p>  9  <span>天</span>  </p>
+                                <p><span>2026-03-01 出发</span><br>
+                                    希腊9日行程
+                                </p>
+                            </div>
+                        </div>
+                        <div class="detail-text">
+                            <p>北京 · 雅典 · 科林斯 · 纳夫普利奥 · 斯巴达 · 奥林匹亚 · 扎金索斯 · 圣托里尼</p>
+                            <div class="text-icon">
+                                <a href="">
+                                    <img src="img/travel_plan/xiaoren.png" alt="">渣渣c7h5o6n3
+                                </a>
+                                <p>
+                                    <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                                    <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                                </p>
+                            </div>
+                        </div>
+        </div>
+        <!--第五个图-->
+        <div class="details">
+                            <div class="detail-img">
+                                <img src="img/travel_plan/325x240 (6).jpg">
+                                <div class="img-txt">
+                                    <p>  10  <span>天</span>  </p>
+                                    <p><span>2026-03-01 出发</span><br>
+                                        梦中的贝加尔湖(1)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="detail-text">
+                                <p>上海 · 伊尔库茨克 · 奥尔洪岛 · 贝加尔湖 · 利斯特维扬卡</p>
+                                <div class="text-icon">
+                                    <a href="">
+                                        <img src="img/travel_plan/xiaoren.png" alt="">Finddingiris
+                                    </a>
+                                    <p>
+                                        <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                                        <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                                    </p>
+                                </div>
+                            </div>
+        </div>
+        <!--第六个图-->
+        <div class="details">
+                                <div class="detail-img">
+                                    <img src="img/travel_plan/325x240 (7).jpg">
+                                    <div class="img-txt">
+                                        <p>  12  <span>天</span>  </p>
+                                        <p><span>2026-03-01 出发</span><br>
+                                            湖南之旅
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="detail-text">
+                                    <p>成都 · 长沙 · 凤凰 · 湘西 · 张家界市 · 张家界风景区</p>
+                                    <div class="text-icon">
+                                        <a href="">
+                                            <img src="img/travel_plan/xiaoren.png" alt="">Valuefoth
+                                        </a>
+                                        <p>
+                                            <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                                            <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                                        </p>
+                                    </div>
+                                </div>
+        </div>
+        <!--第七个图-->
+        <div class="details">
+                                    <div class="detail-img">
+                                        <img src="img/travel_plan/325x240 (8).jpg">
+                                        <div class="img-txt">
+                                            <p>  19  <span>天</span>  </p>
+                                            <p><span>2026-03-01 出发</span><br>
+                                                qld139113的波兰九日游线路
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="detail-text">
+                                        <p>北京 · 华沙 · 波兰马尔堡 · 格但斯克 · 索波特 · 托伦 · 弗罗茨瓦夫 · 布拉格 · 克拉科夫</p>
+                                        <div class="text-icon">
+                                            <a href="">
+                                                <img src="img/travel_plan/xiaoren.png" alt="">qld139113
+                                            </a>
+                                            <p>
+                                                <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                                                <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                                            </p>
+                                        </div>
+                                    </div>
+        </div>
+        <!--第八个图-->
+        <div class="details">
+                                        <div class="detail-img">
+                                            <img src="img/travel_plan/325x240 (14).jpg">
+                                            <div class="img-txt">
+                                                <p>  10  <span>天</span>  </p>
+                                                <p><span>2026-03-01 出发</span><br>
+                                                    英国-伦敦-爱丁堡-温莎-巴斯
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-text">
+                                            <p>上海 · 伦敦 · 牛津 · 剑桥 · 爱丁堡 · 苏格兰高地 · 苏格兰 · 因弗尼斯 · 尼斯湖 · 威廉堡</p>
+                                            <div class="text-icon">
+                                                <a href="">
+                                                    <img src="img/travel_plan/xiaoren.png" alt="">柚子_柚子
+                                                </a>
+                                                <p>
+                                                    <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                                                    <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                                                </p>
+                                            </div>
+                                        </div>
+        </div>
+        <!--第九个图-->
+        <div class="details">
+                                            <div class="detail-img">
+                                                <img src="img/travel_plan/325x240 (9).jpg">
+                                                <div class="img-txt">
+                                                    <p>  12  <span>天</span>  </p>
+                                                    <p><span>2026-03-01 出发</span><br>
+                                                        巴黎罗马巴塞罗那
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="detail-text">
+                                                <p>香港 · 上海 · 巴黎 · 罗马 · 梵蒂冈 · 巴塞罗</p>
+                                                <div class="text-icon">
+                                                    <a href="">
+                                                        <img src="img/travel_plan/xiaoren.png" alt="">Finddingiris
+                                                    </a>
+                                                    <p>
+                                                        <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                                                        <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+        </div>
+        <!--第十个图-->
+        <div class="details">
+                                                <div class="detail-img">
+                                                    <img src="img/travel_plan/325x240 (10).jpg">
+                                                                                       <div class="img-txt">
+                     <p>  14  <span>天</span>  </p>
+                                                        <p><span>2026-03-01 出发</span><br>
+                                                            新西兰自驾南岛深度游
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p>上海 · 伦敦 · 牛津 · 剑桥 · 爱丁堡 · 苏格兰高地 · 苏格兰 · 因弗</p>
+                                                    <div class="text-icon">
+                                                        <a href="">
+                                                            <img src="img/travel_plan/xiaoren.png" alt="">Taogeww
+                                                        </a>
+                                                        <p>
+                                                            <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                                                            <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+        </div>
+        <!--第十一个图-->
+        <div class="details">
+                                                    <div class="detail-img">
+                                                        <img src="img/travel_plan/325x240 (11).jpg">
+                                                        <div class="img-txt">
+                                                            <p>  12  <span>天</span>  </p>
+                                                            <p><span>2026-03-01 出发</span><br>
+                                                                巴黎罗马巴塞罗那
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="detail-text">
+                                                        <p>上海·伦敦·牛津·剑桥·爱丁堡·苏格兰高地·苏格兰·因弗尼斯·尼斯湖·威廉堡·巴斯·巨石阵</p>
+                                                        <div class="text-icon">
+                                                            <a href="">
+                                                                <img src="img/travel_plan/xiaoren.png" alt="">Finddingiris
+                                                            </a>
+                                                            <p>
+                                                                <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                                                                <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+        </div>
+        <!--第十二个图-->
+        <div class="details">
+                                                        <div class="detail-img">
+                                                            <img src="img/travel_plan/325x240 (12).jpg">
+                                                            <div class="img-txt">
+                                                                <p>  12  <span>天</span>  </p>
+                                                                <p><span>2026-03-01 出发</span><br>
+                                                                    巴黎罗马巴塞罗那
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detail-text">
+                                                            <p>香港 · 上海 · 巴黎 · 罗马 · 梵蒂冈 · 巴塞罗</p>
+                                                            <div class="text-icon">
+                                                                <a href="">
+                                                                    <img src="img/travel_plan/xiaoren.png" alt="">Finddingiris
+                                                                </a>
+                                                                <p>
+                                                                    <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                                                                    <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+        </div>
+        <!--第十三个图-->
+        <div class="details">
+                                                            <div class="detail-img">
+                                                                <img src="img/travel_plan/325x240 (3).jpg">
+                                                                <div class="img-txt">
+                                                                    <p>  14  <span>天</span>  </p>
+                                                                    <p><span>2026-03-01 出发</span><br>
+                                                                        2019国庆瑞士行程
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="detail-text">
+                                                                <p>北京 · 苏黎世 · 洛桑 · 依云 · 蒙特勒 · 沃韦 · 采尔马特 · 因特拉肯 · 格林德瓦 · 文根</p>
+                                                                <div class="text-icon">
+                                                                    <a href="">
+                                                                        <img src="img/travel_plan/xiaoren.png" alt="">流泪de球球
+                                                                    </a>
+                                                                    <p>
+                                                                        <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                                                                        <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+        </div>
+        <!--第十四个图-->
+        <div class="details">
+                                                                <div class="detail-img">
+                                                                    <img src="img/travel_plan/325x240 (13).jpg">
+                                                                    <div class="img-txt">
+                                                                        <p>  12  <span>天</span>  </p>
+                                                                        <p><span>2026-03-01 出发</span><br>
+                                                                            巴黎罗马巴塞罗那
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="detail-text">
+                                                                    <p>香港 · 上海 · 巴黎 · 罗马 · 梵蒂冈 · 巴塞罗</p>
+                                                                    <div class="text-icon">
+                                                                        <a href="">
+                                                                            <img src="img/travel_plan/xiaoren.png" alt="">Finddingiris
+                                                                        </a>
+                                                                        <p>
+                                                                            <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                                                                            <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+        </div>
+        <!--第十五个图-->
+        <div class="details">
+                                <div class="detail-img">
+                            <img src="img/travel_plan/325x240 (9).jpg">
+                         <div class="img-txt">
+                         <p>  15  <span>天</span>  </p>
+                    <p><span>2026-03-01 出发</span><br>
+                        小肠子的新西兰15日自驾
+                                </p>
+                                </div>
+                                </div>
+            <div class="detail-text">
+            <p>重庆 · 新加坡 · 基督城 · 蒂卡普湖 · 新西兰南岛 · 库克山国家公园 · 特威泽尔 · 瓦纳卡</p>
+                <div class="text-icon">
+                         <a href="">
+                                 <img src="img/travel_plan/xiaoren.png" alt="">小肠子
+           </a>
+                                    <p>
+                                         <span><img src="img/travel_plan/yanjing.png" alt="">45&nbsp;&nbsp;</span>
+                     <span><img src="img/travel_plan/benzi.png" alt="">179</span>
+                                   </p>
+                                                                        </div>
+                                                                    </div>
+        </div>                                                            
+    </div>
+    <!--下一页按钮-->
+    <div class="anniu">
+        <ul @click="show">
+            <li >上一页</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>下一页</li>
+        </ul>
+    </div>
+    <!--下面的文字-->
+    <div class="luxian">
+        <h5>热门国家路线</h5>
+        <!--ul文字-->
+        <br>
+        <br>
+        <ul class="mt-2">
+            <li><a href="">泰国旅游路线</a></li>
+            <li><a href="">日本旅游路线</a></li>
+            <li><a href="">法国旅游路线</a></li>
+            <li><a href="">美国旅游路线</a></li>
+            <li><a href="">韩国旅游路线</a></li>
+            <li><a href="">马来西亚旅游路线</a></li>
+            <li><a href="">意大利旅游路线</a></li>
+        </ul>
+        <ul>
+            <li><a href="">新加坡旅游路线</a></li>
+            <li><a href="">德国旅游路线</a></li>
+            <li><a href="">西班牙旅游路线</a></li>
+            <li><a href="">英国旅游路线</a></li>
+            <li><a href="">瑞士旅游路线</a></li>
+            <li><a href="">梵蒂冈旅游路线</a></li>
+            <li><a href="">奥地利旅游路线</a></li>
+        </ul>
+        <ul>
+            <li><a href="">柬埔寨旅游路线</a></li>
+            <li><a href="">荷兰旅游路线</a></li>
+            <li><a href="">西班牙旅游路线</a></li>
+            <li><a href="">越南旅游路线</a></li>
+            <li><a href="">印度尼西亚旅游路线</a></li>
+            <li><a href="">梵蒂冈旅游路线</a></li>
+            <li><a href="">新西兰旅游路线</a></li>
+        </ul>
+        <ul>
+            <li><a href="">比利时旅游路线</a></li>
+            <li><a href="">俄罗斯旅游路线</a></li>
+            <li><a href="">菲律宾旅游路线</a></li>
+            <li><a href="">土耳其旅游路线</a></li>
+            <li><a href="">加拿大旅游路线</a></li>
+            <li><a href="">希腊旅游路线</a></li>
+            <li><a href="">匈牙利旅游路线</a></li>
+        </ul>
+        <ul>
+            <li><a href="">阿联酋旅游路线</a></li>
+            <li><a href="">瑞典旅游路线</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+        <h5>热门主题路线</h5>
+        <!--ul文字-->
+        <br>
+        <br>
+        <ul class="mt-2">
+            <li><a href="">美食旅游路线</a></li>
+            <li><a href="">人文旅游路线</a></li>
+            <li><a href="">购物旅游路线</a></li>
+            <li><a href="">旅游观光路线</a></li>
+            <li><a href="">沙滩海岛路线</a></li>
+            <li><a href="">自然风光旅游路线</a></li>
+            <li><a href="">自驾旅游路线</a></li>
+        </ul>
+        <ul>
+            <li><a href="">蜜月旅游路线</a></li>
+            <li><a href="">亲子旅游路线</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+        <h5>热门季节路线</h5>
+        <!--ul文字-->
+        <br>
+        <br>
+        <ul class="mt-2">
+            <li><a href="">一月旅游路线</a></li>
+            <li><a href="">二月旅游路线</a></li>
+            <li><a href="">三月旅游路线</a></li>
+            <li><a href="">四月旅游路线</a></li>
+            <li><a href="">五月旅游路线</a></li>
+            <li><a href="">六月旅游路线</a></li>
+            <li><a href="">七月旅游路线</a></li>
+        </ul>
+        <ul>
+            <li><a href="">八月旅游路线</a></li>
+            <li><a href="">九月旅游路线</a></li>
+            <li><a href="">十月旅游路线</a></li>
+            <li><a href="">十一月旅游路线</a></li>
+            <li><a href="">十二月旅游路线</a></li>
+            <li><a href="">新年旅游路线</a></li>
+            <li><a href="">春节旅游路线</a></li>
+        </ul>
+        <ul>
+            <li><a href="">清明节旅游路线</a></li>
+            <li><a href="">劳动节旅游路线</a></li>
+            <li><a href="">端午节旅游路线</a></li>
+            <li><a href="">中秋旅游路线</a></li>
+            <li><a href="">国庆节旅游路线</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+    <!-- 最下面的背景色 -->
+    <div class="bjs2">
+        <!--背景色里面的第一行文字-->
+        <div class="bjs2-text1">
+            <ul>
+                <li class="pl-2">穷游简介</li>
+                <li>|</li>
+                <li>合作伙伴</li>
+                <li>|</li>
+                <li>加入我们</li>
+                <li>|</li>
+                <li>新手上路</li>
+                <li>|</li>
+                <li>使用帮助</li>
+                <li>|</li>
+                <li>网站地图</li>
+                <li>|</li>
+                <li>会员条款</li>
+                <li>社区指南</li>
+                <li>|</li>
+                <li>版权声明</li>
+                <li>|</li>
+                <li>免费声明</li>
+                <li>|</li>
+                <li>联系我们</li>
+            </ul>
+            <p class="ml-5">
+                2004-2019  &nbsp;&nbsp; © &nbsp;&nbsp;  穷游网 &nbsp;&nbsp; ®  &nbsp;&nbsp; qyer.com&nbsp; All&nbsp; rights&nbsp; reserved. &nbsp;Version &nbsp;v5.57  &nbsp;&nbsp;京ICP备12003524号  &nbsp;&nbsp;&nbsp;京公网安备11010102001935号  &nbsp;&nbsp;&nbsp;京ICP证140673号
+                </p>
+        </div>
+    </div>
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+   </body>
+   </html>
