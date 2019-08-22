@@ -15,7 +15,7 @@
    text-shadow: 0 6px 20px rgba(109, 84, 255, .3);
    font-weight: 500;
 }
-.sh-search{
+.sh-search,.center{
     width: 980px;
     margin: 0 auto;
 }
@@ -37,3 +37,39 @@
     margin-left:32px;
     color: #aaa;
 }
+.center{margin-top:30px;}
+.sort label{
+  margin-right:30px;  
+    
+}
+.sort input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #ff3e6a;
+    text-indent: .15em;
+    line-height: 1; 
+}
+.sort input[type="radio"]:checked + label::before {
+    background-color: #ff3e6a;
+    background-clip: content-box;
+    padding: .1em;
+}
+.sort input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.box .card1{
+    width: 275px;height: 316px;
+    margin: 0 10px;
+}
+.box .card1 img{
+    width: 100%;
+    height: 185px;
+}
+
