@@ -1,5 +1,7 @@
-.my-width{padding: 0 10px;}
+
+.my-width{padding: 0 20px;}
 a,a:hover{text-decoration: none;}
+.mrg-rt-15{margin-right:15px;}
 ul{list-style: none;}
 button:hover{box-shadow: 0 0 2px 2px #ddd;}
 .top-wheel{
@@ -301,9 +303,9 @@ button:hover{box-shadow: 0 0 2px 2px #ddd;}
 .topic-detail .detail-text .title{margin-top:30px;}
 /*---  头像 .avatar  ----*/
 .topic-detail .avatar{
-  position: absolute;top:-30%;
+  position: absolute; top:-30%;
   width:90%;
-  color:#fff;
+  color:#999;
 }
 .topic-detail .avatar>span:first-child{padding:10px;}
 /*----头像图片---*/
@@ -339,8 +341,11 @@ ul.cursel-icon>li:hover{background:#02db94;}
   border:1px solid #ddd;
 }
 /*——————————  特别策划 .special-plan  ——————————*/
-.special-plan{background: #eee;}
-.qy-hall{width:25%;padding-left:20px;}
+.special-plan{background: #eee;padding:20px 0 40px;}
+/*----- 左右部分的宽高设置  ---*/
+.qy-hall,.qy-plan{padding-left:20px;height:470px;}
+.qy-hall{width:25%;}
+.qy-plan{width:75%;}
 .qy-hall h4,.qy-plan h4{padding:10px 0;font-size:28px;}
 .qy-hall .detail-img{position: relative;height:160px; }
 .qy-hall .detail-img>p{
@@ -389,27 +394,130 @@ ul.avatar-wheel>li>img{
   width:100%;height:45px;
   border:1px solid #02db94;
   font-size:14px;
-  margin:15px 0 0;
+  margin:30px 0 0;
 }  
 /*-----  图片部分 .qy-plan-------*/
-.qy-plan{width:75%;padding-left:20px;}
 .qy-plan h4>a{
   float:right;
   font-size:22px;color:#666;
 }
-.qy-plan .detail-img{height:404px;}
+.qy-plan .detail-img{height:405px;}
 .qy-plan .detail-img>li{
+  position: relative;
   float:left;
-  width:33.333333%;padding-left:15px;
-  background:#444;
 }
 .qy-plan .detail-img>li:first-child{
-  height:100%; padding-left:20px;
-  background:url();
+  height:100%;width:30%;
+  background:url(../img/index/sp_bg1.png);
 }
-.qy-plan .detail-img>li:not(:first-child){height:50%;}
+.qy-plan .dimg-2{background:url(../img/index/sp_bg2.png);}
+.qy-plan .dimg-3{background:url(../img/index/sp_bg3.png);}
+.qy-plan .dimg-4{background:url(../img/index/sp_bg4.png);}
+.qy-plan .dimg-5{background:url(../img/index/sp_bg5.png);}
+.qy-plan .detail-img>li:not(:first-child){
+  height:48%; width:33%;
+  margin-left:2%;
+}
+.dimg-4,.dimg-5{margin-top:15px;;}
+.qy-plan .detail-img>li>div{
+  position: absolute;
+  width:100%; height:100%;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  opacity: 0;
+}
+.qy-plan .detail-img>li>div:hover{opacity: 1;}
+.qy-plan .detail-img div>img{
+  width:120px; height:120px;
+  margin:20px 0 10px;
+}
+.detail-img .dimg-1 div>img{margin-top:40%;}
+.qy-plan .detail-img div>span{
+  font:bolder 24px "arial black";
+  color:#fff;
+}
+.detail-img .dimg-1 span{
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+}
+.qy-plan .detail-img div::after{
+  content:"";
+  display: block;
+  position:absolute;
+  top:20px;; right:7px;
+  width:40px; height:40px;
+  background:#02db94;
+  border-radius: 50%;
+}
+/*————————  APP下载图标  .ewm-load   ————————*/
+.ewm-load,.ewm-load ul{
+  display: flex;
+  justify-content: space-between;
+}
+.ewm-load{ 
+  padding:50px 20px 20px;
+}
+.ewm-load ul{text-align:center;color:#666;}
+.ewm-load ul>li:first-child{
+  padding-left:20px;
+  font-size:28px;line-height: 90px;
+}
+.ewm-load ul>li>span{font-size:12px;}
+.ewm-load ul>li~li{margin-left:30px;}
+.ewm-load ul img{width:80px; height:80px;}
 
-
-
+/*————————  底部文字 .foot-text  ——————————*/
+.foot-text{
+  background:#323232;
+  border-top:4px solid #02db94;
+  padding:40px 0;
+}
+.foot-text ul{display: flex;}
+.foot-text ul>li{padding:0px 20px;}
+.foot-text ul>li~li{margin-left:30px;}
+.foot-text ul>li>a{
+  display: block;
+  padding:0px 15px;
+  font:bolder 12px "arial black";
+  color:#999;
+  margin-bottom:10px;
+}
+.foot-text ul>li>a:first-child{
+  border-left:3px solid #02db94;
+  color:#ddd;
+}
+/*——————————  .底部链接  ————————————*/
+.foot-brand{background: #232323;}
+.foot-link>ul{
+  display: flex;
+  justify-content: space-between;
+  color:#666;
+  padding:15px 0;
+}
+.foot-link>ul,.foot-link>div a{font-size:12px;}
+.foot-link>ul li>img{height:36px;}
+.foot-link>ul li>p{padding:0;margin:0;color:#aaa;}
+.foot-link>ul li:last-child>img:last-child{margin-left:10px;}
+.foot-link>div{
+  font-size:12px;color:#666;
+  padding-bottom:15px;
+}
+.foot-link>div::after{
+  content:'';
+  display: block;
+  clear:both;
+}
+.foot-link>div>p{
+  padding:0;margin:0;
+  float:left;
+}
+.foot-link>div>p:first-child{width:5%;}
+.foot-link>div>p:last-child{width:95%;}
+.foot-link>div>p:last-child>a{
+  color:#666;
+  padding:0 3px;
+  border-right:1px solid #666;
+}
 
 
