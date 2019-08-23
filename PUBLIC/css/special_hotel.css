@@ -80,9 +80,20 @@
 
 
 }
+.box .card1 .imghor{
+    width: 100%;
+    height: 185px;
+    overflow: hidden;
+
+}
 .box .card1 img{
     width: 100%;
     height: 185px;
+    transition: all 1s;
+    
+}
+.box .card1 img:hover{
+   transform: scale(1.3);
 }
 .card1 a{
     text-decoration: none;
