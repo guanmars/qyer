@@ -38,7 +38,6 @@ input,button{border:0;outline:none;}
 .my-header{
   justify-content: space-between;
   background: #999;
-  padding:0 50px;
 }
 /*---- 字体大小颜色的设置-----*/
 .my-header a{
@@ -60,7 +59,7 @@ input,button{border:0;outline:none;}
 .nav-bar .nav-list:hover{border-top:3px solid #fff;}
 .nav-list:first-child img{width:76px; height:36px;}
 /*----导航栏下拉内容  .list-content ----*/
-.list-content>div{position: absolute;opacity: 0;}
+.list-content>div{position: absolute;}
 .list-content ul{
   display: flex;
   flex-flow: column wrap;
@@ -68,12 +67,11 @@ input,button{border:0;outline:none;}
   border-radius: 10px;
   background: #fff;
 }
-.list-content>div:hover{opacity: 1;}
 .list-content ul>li{padding:5px 0;}
 /*----- .content-l ----*/
-.content-l1{z-index:3;left:34%;}
-.content-l2{z-index:6;left:58%;}
-.content-l3{z-index:9;left:70%;}
+.content-l1{z-index:3;left:35%;}
+.content-l2{z-index:6;left:60%;}
+.content-l3{z-index:9;left:72%;}
 /*---- 登入注册图标 .user-icon  ---*/
 .nav-user{
   align-items: center;
@@ -84,25 +82,28 @@ input,button{border:0;outline:none;}
 .nav-user>li~li{margin-left:10px;}
 /*---  登入小图标 ----*/
 .user-icon{
-  border-left:2px solid #eee;
+  border-left:1px solid #bbb;
   height:16px;
   padding-left:16px;
 }
 .user-icon a{
   display: inline-block;
   width:16px;height:100%; 
-  margin-right:8px;
+  margin-right:15px;
 }
 .tb-icon{background:url(../img/index/jingl.png);}
 .qq-icon{background:url(../img/index/jingl.png) 0px -43px;}
 .wx-icon{background:url(../img/index/jingl.png) 0px -43px;}
 .sina-icon{background:url(../img/index/jingl.png) 0px -22px;}
 /*--- input输入框 ---*/
-.user-sch>input{background:#fff;width:0px;}
-.user-sch>input:hover{width:180px;}
+.user-sch>input{
+  background:#fff;
+  border-radius: 4px;
+  transition: all 2s;
+}
 .user-sch>button{
-  width:24px; height:24px;
+  width:20px; height:20px;
   position: absolute;
-  top:0; right:0; 
+  top:2px; right:4px; 
   background:url(../img/index/jingl.png) 0px -194px;
 }

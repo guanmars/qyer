@@ -4,15 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/vue.js"></script>
+  <style>
+    div{width:200px;height:200px;border:1px solid #000;}
+  </style>
   <title>Document</title>
 </head>
 <body>
-  <table>
-    <tr>
-      <td>
-        <a href="http://www.baidu.com">百度一下</a>
-      </td>
-    </tr>
-  </table>
+  <div id="app">
+        <div data-nList="3" @click="showD"></div>
+        <p>{{n}}</p>
+  </div>
+  <script>
+    var vm=new Vue({
+      el:'#app',
+      data:{n:0,},
+      methods: {
+         showD(e){
+           //错误写法：
+           this.n=e.target.dataset.nList;
+           console.log(this.n);  //undefined
+           console.log(e.target.dataset);//{nlist:3}
+           //在dataset对象中会将自定义属性中的nList大写字母换成小写字母nlist;
+           //所以要拿到data-nList数据要访问：e.target.nlist;
+           //正确写法：
+           this.n=e.target.dataset.nlist;
+         }
+      },
+    });
+  </script>
 </body>
 </html>

@@ -8,17 +8,19 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/vue.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/comm.css">
   <link rel="stylesheet" href="css/my_header.css">
 </head>
 <body class="bg-grad1">
+<div id="app">
   <div class="container-fluid">
       <!--主页轮播顶部导航栏-->
     <header class="my-header">
         <!--左侧导航栏-->
         <nav class="head-nav">
-            <ul class="nav-bar">
+            <ul @mouseout="fadeCt" class="nav-bar">
                 <li class="nav-list">
                   <a href="#"><img src="img/index/logo.png" alt=""></a>  
                 </li>
@@ -28,26 +30,26 @@
                 <li class="nav-list">
                   <a href="">锦囊</a>
                 </li>
-                <li class="nav-list">
+                <li @mouseover="showCt1" class="nav-list">
                   <a class="lsb"href="">社区</a>
                 </li>
                 <li class="nav-list">
                   <a href="">行程助手</a>
                 </li>
-                <li class="nav-list">
+                <li @mouseover="showCt2" class="nav-list">
                   <a class="lsb"href="">商城</a>
                 </li>
-                <li class="nav-list">
+                <li @mouseover="showCt3" class="nav-list">
                   <a class="lsb"href="">酒店.民宿</a>
                 </li>
                 <li class="nav-list">
                   <a href="">特价酒店</a>
                 </li>
             </ul>
-            <div class="list-content">
-              <div class="content-l1 trg-top">
+            <div @mouseout="fadeCt" class="list-content">
+              <div v-show="n==1"@mouseover="showCt1" class="content-l1 trg-top">
                 <ul>
-                  <li><a href="">旅行论坛</a></li>
+                  <li><a href="">旅行论坛 ></a></li>
                   <li><a href="">旅行专栏<span>NEW</span></a></li>
                   <li><a href="">旅行问答</a></li>
                   <li><a href="">旅行生活分享平台</a></li>
@@ -58,7 +60,7 @@
                   <li><a href="">旅行精选视频</a></li>
                 </ul>
               </div>
-              <div class="content-l2 trg-top">
+              <div v-show="n==2" @mouseover="showCt2" class="content-l2 trg-top">
                 <ul>
                   <li><a href="">机酒自由行</a></li>
                   <li><a href="">当地玩乐</a></li>
@@ -70,7 +72,7 @@
                   <li><a href="">私人订制</a></li>
                 </ul>
               </div>
-              <div class="content-l3 trg-top">
+              <div v-show="n==3" @mouseover="showCt3" class="content-l3 trg-top">
                 <ul>
                   <li><a href="">酒店</a></li>
                   <li><a href="">爱彼的</a></li>
@@ -81,9 +83,9 @@
         </nav>
         <!--注册登入图标-->
         <ul class="nav-user">
-          <li class="user-sch">
-            <input type="text">
-            <button></button>
+          <li @mouseout="fadeIpt" class="user-sch">
+            <input  @mouseover="showIpt" :style="w" type="text">
+            <button @mouseover="showIpt" ></button>
           </li>
           <li class="user-icon">
             <a class="tb-icon"href=""></a>
@@ -96,5 +98,23 @@
         </ul>
     </header>
   </div>
+</div>
+<script>
+   var vm=new Vue({
+     el:"#app",
+     data:{
+       n:0,
+       w:"width:0px;",
+      },
+     methods: {
+       //导航栏的显示
+      showCt1(){this.n=1;},showCt2(){this.n=2},showCt3(){this.n=3;},
+      fadeCt(){this.n=0;},
+      //input框的显示
+      showIpt(){this.w="width:180px;padding:4px;";},
+      fadeIpt(){this.w="width:0px";},
+     },
+   });
+</script>
 </body>
 </html>
