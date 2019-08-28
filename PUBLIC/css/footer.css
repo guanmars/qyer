@@ -1,0 +1,8 @@
+/*最下面的背景色  bjs2*/
+.bjs2{background: #323232;height:181px;margin-top:38px;border-top:3px solid #25a851;}
+.bjs2 .bjs2-text1{width:950px;margin: 0 auto;box-sizing: border-box;padding-top: 40px;}
+.bjs2 .bjs2-text1>ul{display: flex;justify-content: space-between;color:white;font-size: 14px;}
+.bjs2 .bjs2-text1>ul>li:first-child{border-left:3px solid #25a851;}
+.bjs2 .bjs2-text1>p{font-size: 13px;color:#636363;}
+#d1{font-size:14px;color:#636363;display: flex;}
+#d1>li{margin-right:5px;}
