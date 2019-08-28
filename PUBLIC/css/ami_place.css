@@ -41,16 +41,23 @@ ul{
     left: 620px;
     text-align: center;
     line-height: 60px;
+    background-color: #28b76c;
 }    
 .banner .search a{
     color: #fff;
     font-size: 18px;
     text-decoration: none;
     padding: 17px 52px;
-    background-color: #28b76c;
+    
     background-image: url(../img/ami_place/0114c0187e1f5b9fe65524777eaac15.png);
     background-position: 0px 0px;
     background-repeat: no-repeat;
+    line-height: 60px;
+    }
+    .search-ico{
+        width: 5px;
+        height: 5px;
+        border: 2px solid #000;
     }
     /*热门城市推荐*/
 .title{
