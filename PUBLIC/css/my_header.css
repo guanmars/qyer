@@ -1,0 +1,109 @@
+/*导航栏左边部分*/
+a,a:hover{text-decoration: none;}
+input,button{border:0;outline:none;}
+/*--- 字体大小 .fs-n ---*/
+.fs-14{font-size:14px;}
+.fs-16{font-size:16px;}
+/*---- 字体颜色 .txt-n -----*/
+.txt-f{color:#fff;}
+.text-6{color:#666;}
+/*----  背景颜色 .bg-n-----*/
+.bg-grad1{background:linear-gradient(90deg,rgba(0,0,0,.2) 10%,transparent);}
+/*----- 透明度  .opy-n -----*/
+.opy-0{opacity: 0;}
+.opy-1{opacity: 1;}
+/*---  下尖括号 ˇ .lsb ---*/
+.lsb::after{
+  content:"^";
+  display: inline-block;
+  transform: rotate(180deg) scaleX(2);
+  margin-left:6px;
+}
+/*----  上三角形  .trg-top  ---*/
+.trg-top::before{
+  content:"";
+  display: block;
+  width:0px; height:0px;
+  border:solid transparent;
+}
+/*-----  设置单独的样式  -----*/
+.list-content .trg-top::before{
+  border-width:5px;
+  border-bottom-color: #fff;
+  margin-left:25px;
+  margin-bottom:2px;
+}
+.my-header,.nav-bar,.nav-user{display: flex;}
+.head-nav,.list-content,.user-sch{position: relative;}
+.my-header{
+  justify-content: space-between;
+  background: #999;
+}
+/*---- 字体大小颜色的设置-----*/
+.my-header a{
+  font-weight:bold;
+  font-family:"Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Heiti SC,WenQuanYi Micro Hei,sans-serif";
+  color:#fff;
+}
+.nav-bar a{font-size:16px;}
+.list-content a{font-weight:400;color:#333;}
+.list-content a,.nav-user li a{font-size:14px;}
+.head-nav{ width:50%;}
+/*----导航栏部分 .head-nav ----*/
+.head-nav>.nav-bar{justify-content: space-around;}
+.nav-bar .nav-list{
+  border-top:3px solid transparent;
+  transition: all 1s;
+  line-height:36px;
+}
+.nav-bar .nav-list:hover{border-top:3px solid #fff;}
+.nav-list:first-child img{width:76px; height:36px;}
+/*----导航栏下拉内容  .list-content ----*/
+.list-content>div{position: absolute;}
+.list-content ul{
+  display: flex;
+  flex-flow: column wrap;
+  padding:10px 20px;
+  border-radius: 10px;
+  background: #fff;
+}
+.list-content ul>li{padding:5px 0;}
+/*----- .content-l ----*/
+.content-l1{z-index:3;left:35%;}
+.content-l2{z-index:6;left:60%;}
+.content-l3{z-index:9;left:72%;}
+/*---- 登入注册图标 .user-icon  ---*/
+.nav-user{
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 14px ;
+  cursor: pointer;
+}
+.nav-user>li~li{margin-left:10px;}
+/*---  登入小图标 ----*/
+.user-icon{
+  border-left:1px solid #bbb;
+  height:16px;
+  padding-left:16px;
+}
+.user-icon a{
+  display: inline-block;
+  width:16px;height:100%; 
+  margin-right:15px;
+}
+.tb-icon{background:url(../img/index/jingl.png);}
+.qq-icon{background:url(../img/index/jingl.png) 0px -43px;}
+.wx-icon{background:url(../img/index/jingl.png) 0px -43px;}
+.sina-icon{background:url(../img/index/jingl.png) 0px -22px;}
+/*--- input输入框 ---*/
+.user-sch>input{
+  background:#fff;
+  border-radius: 4px;
+  transition: all 2s;
+}
+.user-sch>button{
+  width:20px; height:20px;
+  position: absolute;
+  top:2px; right:4px; 
+  background:url(../img/index/jingl.png) 0px -194px;
+}

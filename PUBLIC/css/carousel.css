@@ -1,0 +1,43 @@
+.w-100{width:100%;}
+.h-100{height:100%;}
+.top-carousel{height:422px;}
+.round-map{position: relative;}
+.round-map>li{position: absolute;}
+.left-icon,.right-icon{
+  width:90px;
+  z-index:5;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background:linear-gradient(90deg,rgba(0,0,0,.2) 10%,transparent);
+}
+.left-icon>p::before,.right-icon>p::before{
+  display: inline-block;
+  padding:0 10px;
+  color:#eee;
+  transform: scale(3,6);
+}
+.left-icon>p::before{content:"<";}
+.right-icon>p::before{content:">"}
+.right-icon{
+  right:0;
+  background:linear-gradient(270deg,rgba(0,0,0,.2) 10%,transparent);
+}
+.top-nav,.bottom-txt{
+  height:60px;
+  z-index:10;
+  background: linear-gradient(180deg,rgba(0,0,0,.3) 10%,transparent);
+}
+.bottom-txt{
+  bottom:0px;
+  background: linear-gradient(0deg,rgba(0,0,0,.3) 10%,transparent);
+  color:#fff;
+  font:bold 14px "Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Heiti SC,WenQuanYi Micro Hei,sans-serif";
+}
+.bottom-txt>h5{
+  position: absolute;
+  right:54px; top:-36px;
+}
+.bottom-txt>h5>span{font-size:32px;}
+.bottom-txt>p{text-align: right;}
+.bottom-txt>p>span{font-weight: 100;}
