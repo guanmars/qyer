@@ -1,0 +1,113 @@
+*{
+  margin:0;padding:0;border:none;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+input{
+  height:40px;
+  border:1px solid #d7d7d7;
+}
+.content{
+  width:100%;
+  height:800px;
+  background: url("../img/login/login_logo.jpg");
+  background-repeat:no-repeat;
+}
+.login-logo{
+ width:100%;
+ text-align: center;
+ color:#fff;
+ padding:60px 0;
+}
+.login-logo img{
+  width:126px;
+  vertical-align:bottom;
+}
+.login-logo span{
+  font-size:24px; 
+}
+.login-section{
+  width:380px;height: 436px;
+  background-color:#fff;
+  margin:0 auto;
+  text-align:center;
+ }
+ .hover{
+   width:150px;height:50px;
+   font-size: 16px;
+   display: inline-block;
+   margin-top:20px;
+   padding-bottom: -20px;
+   text-align:center;   
+   border-bottom: 1px solid #d7d7d7; 
+ }
+ .hover:hover{
+  border-bottom: 2px solid #10b041;
+  color: #3f9f5f;
+ }
+ .username{
+  line-height: 60px;
+  font-size: 14px;
+  text-align:left;
+  color: #959595;
+  margin-left:35px;
+ }
+ .username>a{
+   color:#3f9f5f;
+ }
+ .username>a:hover{
+  border-bottom:1px solid #3f9f5f;
+ }
+.select{
+ width:78px;
+ height:40px;
+ float:left;
+ border:1px solid #d7d7d7;
+ margin-left:35px;
+ margin-bottom: 20px;
+} 
+.section input{
+ width:220px;
+ float:left;
+ margin-left:5px;
+ margin-bottom: 20px;
+ 
+}
+.ewm input{
+  width:190px;
+  margin-left:35px;
+  float:left;
+  margin-bottom: 20px;
+}
+.ewm img{
+  float:left;
+  margin-left:5px;
+  margin-bottom: 20px;
+}
+.input-group input{
+  width:190px;
+  margin-left:35px;
+  float:left;
+  margin-bottom:20px;
+}
+.input-group>button{
+  width:150px;
+  height:40px;
+  color:#ffffff;
+  font-size:14px;
+  background:#3f9f5f;
+  cursor: pointer;
+  margin-bottom:20px;
+  border-radius:5px;
+}
+.input-group>button:hover{
+ background:rgba(63,159,95,0.8);
+}
+.login-button>button{
+  width:82%;height:40px;
+  text-align:center;
+  background:#3f9f5f;
+  border-radius:5px;
+}

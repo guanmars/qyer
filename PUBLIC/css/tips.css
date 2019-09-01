@@ -27,7 +27,7 @@
 }
 
 .my_size {
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .carousel-indicators {
@@ -37,6 +37,8 @@
     background: #060;
     color: #fff !important;
 }
+.fs-32{font-size:16px !important;}
 .text_white{
     color: #fff !important;
 }
+.container-fluid,.container-fluid a{font-size:12px;}

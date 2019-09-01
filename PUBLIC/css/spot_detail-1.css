@@ -1,0 +1,28 @@
+.main-right{width:260px; margin: auto;background:white;border:1px solid #ddd;padding-left:10px;}
+.lsb::after{
+    content:"^";
+    display: inline-block;
+    transform: rotate(180deg) scaleX(2);
+    margin-left:6px;
+    }
+.main-right #border-span{width:180px;height:36px;cursor: pointer;
+border:1px solid #ddd;font-size:14px;padding:8px 13px;line-height:38px;background: white;}
+.main-right>div>span:first-child{font-size:14px;font-weight:bold;}
+.main-right>div .span2{padding-left:65px;}
+.money>span{color:#ff7466;}
+.money .O{font-size:28px;}
+.money>button{background: #ff7466;font-size:20px;
+color:white;width:128px;height:40px;border-radius: 1px;margin-left:72px;}
+.money>button:hover{background: #dd5244;}
+.right-img{padding-top:70px;}
+.right-img>#span1{color:#323232;cursor: pointer;margin-right:20px;
+    font-weight: normal;font-size:16px;}
+#span1:hover{color:#00b081;}
+#phone>span{font-size:12px;color:#959595;}
+#phone>div>p{font-size:18px;color:636363;font-weight: bold;
+padding-top:7px;box-sizing: border-box;}
+#phone>div>span{font-size:12px;color:#959595;}
+#phone>div{padding-left:25px;}
+#btn-an{width:238px;background: #00b081;font-size:12px;border-radius: 1px;height:32px;}
+#btn-an:last-child{margin-top: 13px;}
+#btn-an:hover{background: #00a000;}

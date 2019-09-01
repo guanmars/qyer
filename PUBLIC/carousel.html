@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/vue.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/comm.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <style>
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+  <div id="app">
+    <header class="top-carousel w-100">
+      <ul class="round-map w-100 h-100">
+        <li class="w-100 h-100">
+          <img class="w-100 h-100" :src="cal_src[i]">
+        </li>
+        <li class="left-icon h-100"><p @click="calLeft"></p></li>
+        <li class="right-icon h-100"><p @click="calRight"></p></li>
+        <li class="top-nav w-100"></li>
+        <li class="bottom-txt w-100">
+          <h5><span>1</span>/5</h5>
+          <p>
+          【穷游专栏】大方小圆的攻略集 | 去新场古镇一定要顺道去超小众超大博物馆包馆
+           <br><span>喝沁柠水的猪</span> 
+          </p>
+        </li>
+      </ul>
+    </header>
+  </div>
+  </div>
+  <script>
+    setInterval(function(){
+      if(vm.i<5){vm.i++}
+      else{vm.i=5;}
+    },3000);
+    var vm=new Vue({
+      el:"#app",
+      data:{
+        i:1,
+         cal_src:[
+           "img/index/carousel1",
+           "img/index/carousel2",
+           "img/index/carousel3",
+           "img/index/carousel4",
+           "img/index/carousel5",
+          ],
+      },
+      methods: {
+        calLeft(){
+          if(this.i<5){this.i++}
+          else{this.i=1;}
+        },
+        calRight(){
+          if(this.i>1){this.i--}
+          else{this.i=5;}
+        },
+      },
+    });
+  </script>
+</body>
+</html>
