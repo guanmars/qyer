@@ -129,7 +129,7 @@ router.get('/checkmail', (req, res) => {
 		if (err) throw err;
 		console.log(result);
 		if (!result.email) res.send({ code: 200, msg: 'non_exists' });
-		else ({ code: 201, msg: 'yes_exists' });
+		else res.send({ code: 201, msg: 'yes_exists' });
 	});
 });
 //8.检测手机
@@ -150,7 +150,7 @@ router.get('/checkphone', (req, res) => {
 		if (err) throw err;
 		console.log(result);
 		if (!result.phone) res.send({ code: 200, msg: 'non_exists' });
-		else ({ code: 201, msg: 'yes_exists' });
+		else res.send({ code: 201, msg: 'yes_exists' });
 	});
 });
 //9.检测用户名
@@ -171,7 +171,7 @@ router.get('/checkphone', (req, res) => {
 		if (err) throw err;
 		console.log(result);
 		if (!result.uname) res.send({ code: 200, msg: 'non_exists' });
-		else ({ code: 201, msg: 'yes_exists' });
+		else res.send({ code: 201, msg: 'yes_exists' });
 	});
 });
 // 导出路由

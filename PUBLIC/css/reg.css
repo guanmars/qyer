@@ -12,7 +12,7 @@ input{
 }
 .content{
   height:800px;
-  background: url("../img/login_logo.jpg");
+  background: url("../img/login/login_logo.jpg");
   background-size:100%;
   background-repeat:no-repeat;
   position: relative;
@@ -22,10 +22,10 @@ input{
  color:#fff;
  display: block;
  margin:0 auto;
-position: absolute;
-top:-90px;
-left:0;
-width:100%;
+ position: absolute;
+ top:-90px;
+ left:0;
+ width:100%;
 }
 .login-logo img{
   width:127px;height:46px;
